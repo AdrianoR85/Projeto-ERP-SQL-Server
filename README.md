@@ -29,6 +29,15 @@ ERP systems help companies manage different areas like:
 - Write useful queries  
 - Document the learning process
 
+--- 
+## Same Functions
+### To Rename Table or Column
+```sql
+EXEC sp_renama 'TableName', 'NewTableName';
+EXEC sp_rename 'TableName.OlderColumnName', 'NewColumnName', 'COLUMN';
+```
+
+
 ## ✅ Status
 
 This project is **in progress**.  
