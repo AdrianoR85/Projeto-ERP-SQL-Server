@@ -36,6 +36,10 @@ ERP systems help companies manage different areas like:
 EXEC sp_renama 'TableName', 'NewTableName';
 EXEC sp_rename 'TableName.OlderColumnName', 'NewColumnName', 'COLUMN';
 ```
+### Working Date
+<p align="center">
+  <img src="./assets/datetime.png" width="30%" alt="Datetime"/>
+</p>
 
 
 ## ✅ Status
