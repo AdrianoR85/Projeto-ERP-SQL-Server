@@ -25,3 +25,11 @@ OrderID INT NOT NULL,
 quantity INT NOT NULL
 );
 GO
+
+CREATE TABLE ProductionOrders (
+IdProductionOrder INT PRIMARY KEY IDENTITY(1,1),
+OrderID INT NOT NULL,
+ManufacturingDeadline DATETIME NOT NULL,
+ProductionOrderStatus VARCHAR(15) DEFAULT 'aberto'
+);
+GO
