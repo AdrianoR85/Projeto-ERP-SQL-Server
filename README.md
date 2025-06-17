@@ -51,6 +51,8 @@ Represents date and time values ranging from 1753-01-01 to 9999-12-31
 
 Example:
 ```sql
+  -- Get the month of current date
+  SELECT DATETIME(month, GETDATE())
 ```
 
 #### Dateadd
