@@ -30,17 +30,64 @@ ERP systems help companies manage different areas like:
 - Document the learning process
 
 --- 
-## Same Functions
+## SQL Server Functions 
+
 ### To Rename Table or Column
-```sql
-EXEC sp_renama 'TableName', 'NewTableName';
-EXEC sp_rename 'TableName.OlderColumnName', 'NewColumnName', 'COLUMN';
-```
-### Working Date
-<p align="center">
+Use the `sp_rename` stored procedure to rename tables or columns in SQL Server.
+-- Rename a table
+EXEC sp_rename 'OldTableName', 'NewTableName';
+
+-- Rename a column
+EXEC sp_rename 'TableName.OldColumnName', 'NewColumnName', 'COLUMN';
+
+### Working with Date
+
+#### Datetime
+
+Represents date and time values ranging from 1753-01-01 to 9999-12-31
+<p align="left">
   <img src="./assets/datetime.png" width="30%" alt="Datetime"/>
 </p>
 
+Example:
+```sql
+```
+
+#### Dateadd
+Adds a specified interval (e.g., day, month, year) to a date.
+<p align="left">
+  <img src="./assets/dateadd.png" width="30%" alt="dateadd"/>
+</p>
+
+Example:
+```sql
+  -- Add 1 month to current date
+  SELECT DATEADD(month, 1, GETDATE());
+```
+
+#### Datediff
+Returns the difference between two dates in specified units (e.g., days, months).
+<p align="left">
+  <img src="./assets/datediff.png" width="30%" alt="datediff"/>
+</p>
+
+Example:
+```sql
+  -- Get number of days between two dates
+  SELECT DATEDIFF(day, '2025-01-01', GETDATE());
+```
+
+#### Convert
+Converts data from one type to another, commonly used for formatting date
+<p align="left">
+  <img src="./assets/convert.png" width="30%" alt="convert"/>
+</p>
+
+Example:
+```sql
+  -- Convert current date to dd/mm/yyyy format
+  SELECT CONVERT(VARCHAR, GETDATE(), 103);
+```
 
 ## ✅ Status
 
