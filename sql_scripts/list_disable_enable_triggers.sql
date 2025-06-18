@@ -17,3 +17,18 @@ JOIN sys.objects o ON t.parent_id = o.object_id;
 
 ---------- DISABLE ---------
 DISABLE TRIGGER dbo.TgrTestClientAI ON dbo.Clients;
+DISABLE TRIGGER tgr_test_client_aiu ON dbo.Clients;
+DISABLE TRIGGER TgrTestClientAU ON dbo.Clients;
+
+DISABLE TRIGGER TgrControllerERPX ON DATABASE;
+
+DISABLE TRIGGER TgrInstanceControllerDB ON ALL SERVER ;
+
+---------- ENABLE ----------
+ENABLE TRIGGER dbo.TgrTestClientAI ON dbo.Clients;
+ENABLE TRIGGER tgr_test_client_aiu ON dbo.Clients;
+ENABLE TRIGGER TgrTestClientAU ON dbo.Clients;
+
+ENABLE TRIGGER TgrControllerERPX ON DATABASE;
+
+ENABLE TRIGGER TgrInstanceControllerDB ON ALL SERVER;
