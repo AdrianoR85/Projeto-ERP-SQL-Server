@@ -33,3 +33,8 @@ ManufacturingDeadline DATETIME NOT NULL,
 ProductionOrderStatus VARCHAR(15) DEFAULT 'aberto'
 );
 GO
+
+CREATE TABLE TestTrigger(
+  History VARCHAR(200)
+);
+GO
