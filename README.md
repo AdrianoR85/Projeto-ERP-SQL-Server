@@ -1,33 +1,20 @@
-# ERP Database Project
+# SQL Server Study
 
-This is a project for a database created during a Database course.  
-The goal is to build a database for an ERP (Enterprise Resource Planning) system.
-
-## 📘 About the Project
-
-ERP systems help companies manage different areas like:
-
-- Sales  
-- Inventory  
-- Finance  
-- Human Resources  
-- Purchases  
+This repository is for my study in SQL Server Database.
 
 ## ☁️ Technology Stack
 
 - **SQL Server** as the database system  
 - **Microsoft Azure** for hosting the database  
-- Database design tool: Draw.io or DBDesigner  
+- Database design tool: Draw.io  
 - Git and GitHub for version control  
 
 ## 💡 Objectives
 
 - Practice SQL with SQL Server  
-- Learn how to use Azure SQL Database  
-- Understand ERP systems and their data  
+- Learn how to use Azure SQL Database   
 - Create tables and relationships  
 - Write useful queries  
-- Document the learning process
 
 --- 
 ## SQL Server Functions 
